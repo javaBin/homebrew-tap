@@ -5,20 +5,20 @@
 class Javabin < Formula
   desc "Developer CLI for the Javabin platform"
   homepage "https://github.com/javaBin/javabin-cli"
-  version "0.1.0"
+  version "0.2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/javaBin/javabin-cli/releases/download/v0.1.0/javabin-cli_0.1.0_darwin_amd64.tar.gz"
-      sha256 "391651e55258ee3c1e360466b72e180e638d9694b0158283c5e322bbdec3fd0d"
+      url "https://github.com/javaBin/javabin-cli/releases/download/v0.2.0/javabin-cli_0.2.0_darwin_amd64.tar.gz"
+      sha256 "bcae1e4eb19e5f07586a1c264787014f85a0142cfc37a61fb751187c5f16ed2a"
 
       define_method(:install) do
         bin.install "javabin"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/javaBin/javabin-cli/releases/download/v0.1.0/javabin-cli_0.1.0_darwin_arm64.tar.gz"
-      sha256 "4e1b4b5ca6e13c9e02c9802e424abc2e46a2612267b581da2606c36d58a644c4"
+      url "https://github.com/javaBin/javabin-cli/releases/download/v0.2.0/javabin-cli_0.2.0_darwin_arm64.tar.gz"
+      sha256 "55b7f879bf36accc3175afee1fc2c1f155843d7fa2692b22d2144d0954213c48"
 
       define_method(:install) do
         bin.install "javabin"
@@ -28,15 +28,15 @@ class Javabin < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/javaBin/javabin-cli/releases/download/v0.1.0/javabin-cli_0.1.0_linux_amd64.tar.gz"
-      sha256 "37f459c821dd8f1c1a6151d9f7b5c3a798f9ee56d6bac9406ca1688d7d3a606c"
+      url "https://github.com/javaBin/javabin-cli/releases/download/v0.2.0/javabin-cli_0.2.0_linux_amd64.tar.gz"
+      sha256 "1ef0eb108758ecc5434a42fb4e2d53742845be9eecd926d76ab40adb106ed013"
       define_method(:install) do
         bin.install "javabin"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/javaBin/javabin-cli/releases/download/v0.1.0/javabin-cli_0.1.0_linux_arm64.tar.gz"
-      sha256 "c9d15a749f4a0bbe26a24f1b3b3a35ebbd3273a347ccad4d10731efd02617801"
+      url "https://github.com/javaBin/javabin-cli/releases/download/v0.2.0/javabin-cli_0.2.0_linux_arm64.tar.gz"
+      sha256 "945da29157c3225d025d6c85087fa59578760e6a46b6f1c06b32cfdbfecb234e"
       define_method(:install) do
         bin.install "javabin"
       end
